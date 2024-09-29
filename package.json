@@ -7,7 +7,7 @@
     "test": "vitest --reporter verbose",
     "client:i": "cd client && npm i",
     "server:i": "cd server && npm i",
-    "client": "cd client && npm run start",
+    "client": "cd client && npm run dev",
     "server": "cd server & npm run start"
   },
   "author": "",
