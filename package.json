@@ -1,0 +1,15 @@
+{
+  "name": "potato-verse",
+  "version": "1.0.0",
+  "description": "An ecommerce platform for games",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest --reporter verbose",
+    "client:i": "cd client && npm i",
+    "server:i": "cd server && npm i",
+    "client": "cd client && npm run start",
+    "server": "cd server & npm run start"
+  },
+  "author": "",
+  "license": "ISC"
+}
