@@ -2,14 +2,28 @@
   "name": "potato-verse",
   "version": "1.0.0",
   "description": "An ecommerce platform for games",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "vitest --reporter verbose",
     "client:i": "cd client && npm i",
     "server:i": "cd server && npm i",
     "client": "cd client && npm run dev",
-    "server": "cd server & npm run start"
+    "server": "cd server && npm run start",
+    "start": "nodemon server/server.js",
+    "prod": "set NODE_ENV=production&& nodemon server.js",
+    "debug": "ndb server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [],
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.7.1",
+    "nodemon": "^3.1.7"
+  }
 }
