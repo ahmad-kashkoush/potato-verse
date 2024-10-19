@@ -1,11 +1,10 @@
-import Image from "next/image";
 import styled from "styled-components";
 
 function Logo() {
   return (
     <StyledLogo>
       <p className="relative image-wrapper">
-        <Image src="/logo-icon.png" alt="logo icon" fill />
+        <img src="/logo-icon.png" alt="logo icon" />
       </p>
       <p className="uppercase">Verse</p>
     </StyledLogo>
@@ -32,6 +31,11 @@ const StyledLogo = styled.div`
     --size: 60px;
     width: var(--size);
     height: var(--size);
+    & img{
+      width: inherit;
+      height: inherit;
+    }
+    
   }
   @media (min-width: 600px) {
     & {

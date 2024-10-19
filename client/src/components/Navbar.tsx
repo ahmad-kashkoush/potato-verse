@@ -4,7 +4,7 @@ import { HiOutlineShoppingCart } from "react-icons/hi2";
 
 function Navbar() {
   return (
-    <StyledNavbar>
+    <StyledNavbar className="container">
       <Logo />
       <HiOutlineShoppingCart />
     </StyledNavbar>
@@ -24,29 +24,5 @@ const StyledNavbar = styled.nav`
     height: 40px;
     color: #2d0b07;
     stroke-width: 2;
-  }
-
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media (min-width: 750px) {
-    & {
-      max-width: 700px;
-    }
-    & svg {
-      width: 70px;
-      height: 70px;
-    }
-  }
-  @media (min-width: 992px) {
-    & {
-      max-width: 950px;
-    }
-  }
-  @media (min-width: 1080px) {
-    & {
-      max-width: 1050px;
-    }
   }
 `;
