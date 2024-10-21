@@ -6,14 +6,20 @@ const GlobalStyle = createGlobalStyle`
 @tailwind components;
 @tailwind utilities;
 
-html{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 :root {
-  --background: #ffffff;
+  --background: black;
   --foreground: #171717;
+  --bg-input-field: #ffffff;
+  --c-input-field: black;
+  --bg-btn-primary:var(--bg-input-field);
+  --c-btn-primary:var(--c-input-field);
  
 }
 
